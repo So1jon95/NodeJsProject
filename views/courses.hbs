@@ -1,0 +1,36 @@
+<h1>Курсы</h1>
+{{#if courses.length}}
+
+  <div class="carousel carousel-slider">
+    {{#each courses}}
+      <div class="carousel-item" style="width: 550px; margin-left: 50px; ">
+        <div class="card" style="width: 500px; ">
+          <div class="card-image" style="width: 500px; height:500px;">
+            <img src="{{img}}" alt="{{title}}" />
+          </div>
+
+          <div class="card-content">
+            <span class="card-title">{{title}}</span>
+            <p class="price">{{price}}</p>
+          </div>
+          <div class="card-action actions">
+            <a href="/courses/{{id}}" target="_blank">Открыть курс</a>
+            {{#if @root.isAuth}}
+              <a
+                href="/courses/{{id}}/edit?allow=ture"
+                class="btn btn-primary"
+              >Редактировать  <i class="large material-icons">border_color</i></a>
+              <form action="/card/add" method="POST">
+                {{!-- <input type="hidden" name="_csrf" value="{{@root.csrf}}" /> --}}
+                <input type="hidden" name="id" value="{{id}}" />
+                <button type="submit" class="btn btn-primary">Купить курс <i class="large material-icons">done</i></button>
+              </form>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+{{else}}
+  <p>Курсов пока нет</p>
+{{/if}}

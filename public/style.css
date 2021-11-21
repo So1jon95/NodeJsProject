@@ -1,0 +1,140 @@
+body{
+  background: linear-gradient(rgb(24, 12, 12), #014141, #ccc);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  height: 100vh;
+}
+.tabs{
+  display: block;
+  background: linear-gradient( #014141, rgb(70, 66, 66));
+  border-radius: 10px;
+  color: #fff;
+
+}
+
+.validate.valid{
+  padding: 0px 5px 0px !important;
+}
+nav{
+  background: linear-gradient( #aba9e2, rgb(54, 53, 53) ) !important;
+
+}
+.nav-wrapper {
+  padding: 0 2rem;
+}
+.price {
+  font-size: 40px;
+  font-weight: 900;
+}
+.card-content .card-title {
+  color: rgba(70, 67, 67, 0.8);
+  font-size: 30px;
+  font-weight: 700;
+}
+.course {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.course h1 {
+  margin-bottom: 2rem;
+}
+
+.course img {
+  max-width: 600px;
+  height: auto;
+}
+
+.course .price.big {
+  font-size: 2.5rem;
+}
+p{
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(137, 137, 141, 0.8);
+
+}
+.carousel.carousel-slider .carousel-item p {
+  font-size: 35px;
+}
+h1{
+  /* color: rgba(4, 114, 108, 0.788); */
+  color: #fff;  
+  font-weight: 700;
+
+  
+}
+.card .card-action{
+  background-color: rgba(70, 67, 67, 0.925);
+  padding: 16px 12px;
+}
+.card .card-content{
+  border-top: 3px solid rgba(4, 114, 108, 0.788);
+}
+.card-action.actions{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.course-form{
+  margin-bottom: 2rem;
+}
+.auth{
+  padding-top: 1rem;
+}
+
+.alert{
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 1rem;
+  background: rgba(255, 0, 0, .3);
+  color: red;
+
+}
+.carousel{
+  height: 737px;
+}
+.btn{
+ display: block;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.material-icons{
+  padding-left: 5px;;
+}
+.validate{
+  color: #ffff;
+}
+
+.errorHendler{
+ margin-top: 300px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+}
+.pagesHendler{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.homeHendler{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatar{
+  max-width: 400px;
+  height: auto;
+}
+
